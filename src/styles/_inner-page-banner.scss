@@ -1,0 +1,37 @@
+.inner-header-and-banner {
+    width: 100%;
+    border-radius: 1.5rem;
+    background: #080f1e;
+    overflow: hidden;
+}
+
+.about-hero {  
+  padding: 38px 0 100px;
+  position: relative;
+  background-image: url("/images/page-header-bg.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+ .hero-inner-sub {
+    h1 {
+      font-size: clamp(2rem, 4vw, 3.75rem);
+      color: #fff;
+      font-weight: 600;
+      margin: 50px 0 10px;
+    }
+  }
+
+  .breadcrumb {
+    font-size: 16px;
+    color: #94a3b8;
+
+    span {
+      margin: 0 6px;
+    }
+
+    @media(max-width:1024px) {
+      font-size: 12px;
+    }
+  }
+}

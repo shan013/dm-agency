@@ -1,0 +1,191 @@
+
+.about-page-approach-section {  
+  background-color: #101725;
+  padding: 90px 0 90px;
+  background-image: url("/images/dark-section-bg-image.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.about-page-approach-wrap {
+  position: relative;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .about-page-approach-heading {
+    text-align: center;
+    margin-bottom: 36px;
+
+    h2 {
+      font-size: 46px;
+      line-height: 1.15;
+      font-weight: 600;
+      color: #fff;
+      margin: 0 0 12px;
+    }
+
+    p {
+      color: #94a3b8;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+  }
+
+  .about-page-eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .about-page-eyebrow-light {
+    color: #cbd5e1;
+  }
+
+  .about-page-dot {
+    width: 7px;
+    height: 7px;
+    background: #7c4dff;
+    border-radius: 50%;
+  }
+
+  .about-page-approach-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 18px;
+  }
+
+  .about-page-approach-column {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .about-page-approach-image-card {
+    padding: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #242d3a;
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+  }
+
+  .about-page-approach-dark-card {
+    background: #242d3a;
+    border-radius: 16px;
+    padding: 18px;
+    position: relative;
+    overflow: hidden;
+
+    strong {
+      color: #fff;
+      font-size: 16px;
+      display: block;
+    }
+
+    p {
+      font-size: 16px;
+      color: #94a3b8;
+      line-height: 1.5;
+      margin: 8px 0 0;
+    }
+  }
+
+
+  .about-page-approach-purple-card {
+    background: #7c4dff;
+    border-radius: 16px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 340px;
+
+    > strong {
+      font-size: 32px;
+      color: #fff;
+      font-weight: 800;
+    }
+
+    .about-page-approach-card-bottom {
+      b {
+        color: #fff;
+        font-size: 16px;
+      }
+
+      p {
+        color: #e9e5ff;
+        font-size: 16px;
+        margin-top: 6px;
+      }
+    }
+  }
+
+  .about-page-approach-map-card {
+    min-height: 340px;
+    background-color: #242d3a;
+    background-image: url("/images/approach-item-bg-image.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .about-page-approach-map-dots {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(#3a4556 1px, transparent 1px);
+    background-size: 8px 8px;
+    opacity: 0.4;
+    mask-image: linear-gradient(to top left, #000, transparent);
+  }
+
+  .about-page-approach-free-line {
+    text-align: center;
+    margin-top: 3.5rem;
+    font-size: 16px;
+    color: #cbd5e1;
+
+    span {
+      color: #cbd5e1;
+      border: 1px solid rgba(124, 77, 255, 0.4);
+      border-radius: 30px;
+      padding: 6px 12px;
+    }
+
+    a {
+      color: #7c4dff;
+      font-weight: bold;
+      text-decoration: none;
+      margin-left: 8px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-page-approach-wrap {
+    .about-page-approach-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .about-page-approach-purple-card,
+    .about-page-approach-map-card {
+      min-height: 220px;
+    }
+  }
+}

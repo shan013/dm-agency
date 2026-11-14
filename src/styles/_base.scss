@@ -1,0 +1,69 @@
+@use "variables" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 16px;
+  background: $color-white;
+  font-family: $font-primary;
+  line-height: 1.6;
+
+  @media (max-width: 767px) {
+    padding: 5px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.site-container {
+  width: 100%;
+  max-width: $container-width;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* CUSTOM SCROLLBAR */
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f7f7f8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7c4dff;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6535e8;
+}
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #7c4dff #f7f7f8;
+}
+
+.animate-word {
+  display: inline-block;
+  white-space: nowrap;
+}

@@ -1,0 +1,136 @@
+
+.about-page-who-we-are {
+  padding: 80px 0;
+  background: #fff;
+
+  .about-page-who-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .about-page-who-content {
+    .about-page-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #0f172a;
+      margin-bottom: 12px;
+    }
+
+    .about-page-dot {
+      width: 7px;
+      height: 7px;
+      background: #7c4dff;
+      border-radius: 50%;
+    }
+
+    h2 {
+      font-size: 46px;
+      line-height: 1.15;
+      font-weight: 600;
+      color: #0f172a;
+      margin: 0 0 12px;
+    }
+
+    .about-page-who-muted {
+      font-size: 16px;
+      color: #6b7280;
+      line-height: 1.6;
+    }
+  }
+
+  .about-page-who-image {
+    border-radius: 18px;
+    overflow: hidden;
+    height: 520px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .about-page-icon-box-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 26px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 18px 0;
+  }
+
+  .about-page-icon-box {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0f172a;
+
+    i {
+      font-size: 22px;
+      color: #0f172a;
+    }
+  }
+
+  .about-page-check-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    li {
+      display: flex;
+      gap: 8px;
+      font-size: 16px;
+      color: #334155;
+
+      i {
+        color: #7c4dff;
+        margin-top: 2px;
+      }
+    }
+  }
+
+  .about-page-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #7c4dff;
+    color: #fff;
+    padding: 6px 6px 6px 18px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+
+    span {
+      width: 30px;
+      height: 30px;
+      background: #111;
+      color: #fff;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-page-who-we-are {
+    .about-page-who-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

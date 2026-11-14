@@ -1,0 +1,11 @@
+.video-block {
+    width: 100%;
+    iframe {
+        aspect-ratio: 16/9;
+        border-radius: 1.5rem;
+        overflow: hidden;
+        display: block;
+        width: 100%;
+        border: 0;
+    }
+}

@@ -1,0 +1,71 @@
+
+.not-found-page {
+  min-height: 100vh;
+  background-color: #10172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 1.5rem;
+  background-image: url("/images/dark-section-bg-image.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  .not-found-content {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .not-found-code {
+    display: block;
+    font-size: clamp(100px, 20vw, 190px);
+    font-weight: 800;
+    line-height: 1;
+    color: #7c4dff;
+    letter-spacing: -8px;
+  }
+
+  h1 {
+    color: #ffffff;
+    font-size: 46px;
+    font-weight: 600;
+    margin: 20px 0 14px;
+  }
+
+  p {
+    color: #a8b0c3;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0 auto 30px;
+    max-width: 480px;
+  }
+
+  .not-found-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: #7c4dff;
+    color: #ffffff;
+    padding: 14px 24px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+
+    &:hover {
+      background: #6535e8;
+    }
+  }
+
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 36px;
+    }
+
+    .not-found-code {
+      letter-spacing: -4px;
+    }
+  }
+}

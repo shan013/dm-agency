@@ -1,0 +1,191 @@
+
+.work-process-section {
+  background: #f8f7f5;
+  padding: 40px 0 60px;
+
+  .eyebrow.light {
+    font-size: 11px;
+    letter-spacing: 1.6px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    opacity: .9;
+
+    &::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: #7c4dff;
+      border-radius: 50%;
+    }
+  }
+
+  .wp-banner {
+    position: relative;
+    width: 100%;
+    min-height: 520px;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    background: url('/images/our-work-bg-image-elite.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 60px;
+    isolation: isolate;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        90deg,
+        rgba(5, 20, 40, 0.75) 0%,
+        rgba(5, 20, 40, 0.35) 55%,
+        rgba(5, 20, 40, 0.15) 100%
+      );
+      z-index: 0;
+    }
+  }
+
+  .wp-content {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+
+    h2 {
+      color: #fff;
+      font-size: 46px;
+      line-height: 1.15;
+      font-weight: 600;
+      margin-top: 14px;
+      letter-spacing: -0.02em;
+    }
+  }
+
+  .watch-video {
+    position: relative;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    flex-shrink: 0;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+
+    &:hover .play-btn {
+      transform: scale(1.08);
+      background: #6d3df0;
+    }
+  }
+
+  .circle-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotate 10s linear infinite;
+    fill: #fff;
+    font-weight: 500;
+  }
+
+  .play-btn {
+    width: 64px;
+    height: 64px;
+    background: #7c4dff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-size: 20px;
+    box-shadow: 0 0 0 8px rgba(124, 77, 255, 0.15);
+    transition: .3s;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  @media (max-width: 900px) {
+    .wp-banner {
+      min-height: 420px;
+      padding: 30px;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .wp-content h2 {
+      font-size: 28px;
+    }
+
+    .watch-video {
+      width: 100px;
+      height: 100px;
+      align-self: flex-end;
+    }
+
+    .play-btn {
+      width: 54px;
+      height: 54px;
+    }
+  }
+}
+
+
+.video-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+  .video-modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+  }
+
+  .video-modal-close {
+    position: absolute;
+    top: -45px;
+    right: 0;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 36px;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  .video-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    border-radius: 12px;
+    overflow: hidden;
+
+    iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  }
+}

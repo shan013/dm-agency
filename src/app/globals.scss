@@ -1,0 +1,49 @@
+@use "../styles/variables";
+@use "../styles/mixins";
+@use "../styles/base";
+
+@use "../styles/header";
+@use "../styles/hero";
+@use "../styles/brands";
+@use "../styles/about";
+@use "../styles/services";
+@use "../styles/impact";
+@use "../styles/projects";
+@use "../styles/team";
+@use "../styles/work-process";
+@use "../styles/seo-process";
+@use "../styles/testimonials";
+@use "../styles/blog";
+@use "../styles/footer";
+
+@use "../styles/inner-footer";
+@use "../styles/inner-page-banner";
+
+
+@use "../styles/dedicated";
+@use "../styles/about-approach";
+@use "../styles/about-who-we-are";
+@use "../styles/video-block";
+@use "../styles/about-team";
+@use "../styles/about-work-process";
+@use "../styles/about-impact";
+@use "../styles/about-success";
+@use "../styles/about-faq";
+
+@use "../styles/services-grid";
+
+@use "../styles/service-detail";
+
+@use "../styles/contact";
+
+@use "../styles/blog-page";
+
+@use "../styles/blog-detail";
+
+@use "../styles/not-found";
+
+@use "../styles/cursor";
+
+.page-animation-root {
+  display: contents;
+}

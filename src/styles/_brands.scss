@@ -1,0 +1,49 @@
+
+@use "variables" as *;
+
+.brands {
+  overflow: hidden;
+  padding: 24px 0;
+  background: $color-purple;
+}
+
+.brands-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: brandScroll 25s linear infinite;
+
+  span {
+    flex-shrink: 0;
+    padding: 0 45px;
+    color: $color-white;
+    font-size: 25px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes brandScroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 767px) {
+  .brands {
+    padding: 20px 0;
+  }
+
+  .brands-track span {
+    padding: 0 25px;
+    font-size: 20px;
+  }
+}

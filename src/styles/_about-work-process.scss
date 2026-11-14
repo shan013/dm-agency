@@ -1,0 +1,141 @@
+
+.about-page-work-wrap {
+  background-color: #101725;
+  background-image: url("/images/dark-section-bg-image.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  border-radius: 18px;
+  padding: 90px 0 90px;
+
+  .about-page-work-heading {
+    text-align: center;
+    margin-bottom: 42px;
+
+    .about-page-eyebrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .about-page-eyebrow-light {
+      color: #8b96a8;
+    }
+
+    .about-page-dot {
+      width: 6px;
+      height: 6px;
+      background: #7c4dff;
+      border-radius: 50%;
+    }
+
+    h2 {
+      font-size: 46px;
+      line-height: 1.15;
+      font-weight: 600;
+      color: #fff;
+      margin: 0;
+    }
+
+    p {
+      font-size: 16px;
+      color: #94a3b8;
+      line-height: 1.6;
+      margin-top: 12px;
+    }
+  }
+
+  .about-page-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 10px;
+  }
+
+  .about-page-step-badge {
+    background: #242d3a;
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #cbd5e1;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 18px;
+
+    span {
+      width: 6px;
+      height: 6px;
+      background: #7c4dff;
+      border-radius: 50%;
+      display: inline-block;
+    }
+  }
+
+  .about-page-step-card {
+    background: #242d3a;
+    border-radius: 14px;
+    padding: 22px;
+    min-height: 180px;
+
+    h4 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      margin: 0 0 10px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #94a3b8;
+      line-height: 1.5;
+      margin: 0;
+    }
+  }
+
+  .about-page-step-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    color: #7c4dff;
+    font-size: 18px;
+    margin-bottom: 28px;
+  }
+
+  .about-page-work-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 26px;
+    color: #cbd5e1;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .about-page-mini-avatars {
+    display: flex;
+
+    img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 2px solid #101725;
+      margin-left: -8px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
